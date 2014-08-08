@@ -1,0 +1,26 @@
+<template name="nav">
+  <nav class="top-bar" data-topbar>
+
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="{{pathFor 'home'}}">QUINTESSENTIALLY</a></h1>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+      <ul class="right">
+        {{#if currentUser }}
+          <li><a href="#">Logout</a></li>
+        {{/if }}
+
+        {{#unless currentUser }}
+          <li><a id="register-button" href="{{pathFor 'registration'}}">Sign up</a></li>
+          <li><a id="login-button" href="#">Login</a></li>
+        {{/unless }}
+      </ul>
+    </section>
+
+  </nav>
+
+  {{> login }}
+</template>
