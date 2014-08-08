@@ -1,0 +1,39 @@
+@import url('fonts.import.less');
+@import url('colors.import.less');
+
+.accounts {
+  border: 1px solid @light-gray;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  background: white;
+  box-shadow: 1px 1px 0 0 fade(gray, 20%);
+
+  h1 {
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+
+  input {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid @light-gray;
+    border-bottom: 1px solid @light-gray;
+    box-shadow: none;
+  }
+
+  input[type=submit] {
+    margin: 10px 0;
+    background: #a767b0;
+    color: white;
+    border: 0;
+    padding: 10px 15px;
+  }
+}
+
+#login-box {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 45px;
+}
